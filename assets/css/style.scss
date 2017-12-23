@@ -4,12 +4,13 @@
 @import 'jekyll-theme-hacker';
 
 header {
-    //padding: 40px 0;
+    padding: 40px 0;
 }
 
 .header-container {
     width: 90%;
     max-width: 830px;
+    margin: 0 auto;
     nav {
         ul {
             li {
