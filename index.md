@@ -3,4 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+title: Marcos Miranda - Gamer. Developer. Know-It-All.
 ---
+<div class="blurb">
+    <h1>¡Hola! Soy Marcos Miranda.</h1>
+    <p>Soy desarrollador de juegos y páginas web, y trabajo enseñando programación.</p>
+    <p><a href="/about">Saber más... (por alguna razón)</a></p>
+</div><!-- /.blurb -->
