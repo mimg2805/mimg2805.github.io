@@ -8,5 +8,5 @@ title: Marcos Miranda - Gamer. Developer. Know-It-All.
 <div class="blurb">
     <h1>¡Hola! Soy Marcos Miranda.</h1>
     <p>Soy desarrollador de juegos y páginas web, y trabajo enseñando programación.</p>
-    <p><a href="/about">Saber más... (por alguna razón)</a></p>
+    <p><a href="/about">Saber más... (for some reason)</a></p>
 </div><!-- /.blurb -->
