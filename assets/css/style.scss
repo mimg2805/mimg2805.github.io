@@ -2,3 +2,20 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+header {
+    padding: 40px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 830px;
+    nav {
+        ul {
+            li {
+                float: left;
+                margin-right: 90px;
+            }
+        }
+    }
+}
