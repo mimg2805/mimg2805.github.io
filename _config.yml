@@ -24,7 +24,7 @@ github_username:  mimg2805
 
 # Build settings
 markdown: kramdown
-theme: hacker
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-sitemap
