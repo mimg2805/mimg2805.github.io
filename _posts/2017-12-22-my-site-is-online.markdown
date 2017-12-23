@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My site is online :D"
+title: "Marcos' Mind Dumps - My site is online :D"
 date: 2017-12-22
 ---
 
