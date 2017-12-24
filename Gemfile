@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-#url "https://mimg2805.github.com" # the base hostname & protocol for your site
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -25,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
+  # gem "jekyll-multiple-languages-plugin"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

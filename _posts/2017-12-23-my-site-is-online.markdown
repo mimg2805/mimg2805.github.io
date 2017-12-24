@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Marcos' Mind Dumps - My site is online :D"
-date: 2017-12-22
+title: "My site is online :D"
+date: 2017-12-23
 ---
 
 Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.

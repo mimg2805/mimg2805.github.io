@@ -2,21 +2,9 @@
 ---
 
 @import 'jekyll-theme-hacker';
-
-header {
-    padding: 40px 0;
-}
-
-.header-container {
-    width: 90%;
-    max-width: 830px;
-    margin: 0 auto;
-    nav {
-        ul {
-            li {
-                float: left;
-                margin-right: 90px;
-            }
-        }
-    }
-}
+@import 'home';
+@import 'about';
+@import 'projects';
+@import 'cv';
+@import 'blog';
+@import 'contact';
