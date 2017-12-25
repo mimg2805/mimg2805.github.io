@@ -1,3 +1,13 @@
+/* Hide body until icons load */
+
+body {
+    display: none;
+}
+
+.fontawesome-i2svg-active body {
+    display: initial;
+}
+
 $break-small: 480px;
 
 header {
