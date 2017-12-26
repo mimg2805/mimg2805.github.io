@@ -18,7 +18,7 @@ header {
         h1 {
             margin: 0 auto;
         }
-        li {
+        nav div {
             float: left;
             margin-right: 3em;
             @media screen and (max-width: $break-small) {
