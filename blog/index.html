@@ -2,15 +2,15 @@
 layout: default
 title: Marcos' Mind Dumps
 ---
-	<h1>{{ page.title }}</h1>
-	
-	<a class="btn" href="atom.xml" target="_blank">
-		<span class="fas fa-rss"></span> 
-		Subscribirse via RSS
-	</a>
+<h1>{{ page.title }}</h1>
 
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<a class="btn" href="/feed.xml" target="_blank">
+	<span class="fas fa-rss"></span> 
+	Subscribirse via RSS
+</a>
+
+<ul class="posts">
+	{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
