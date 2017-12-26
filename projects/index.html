@@ -4,16 +4,121 @@ title: Proyectos
 ---
 <div class="blurb">
     <h1>Proyectos</h1>
+    <p>Ésta es la lista de mis proyectos personales.</p>
     
     <br/>
     <hr/>
     <br/>
-    
-    <h2><i class="fab fa-android"></i> Android</h2>
+
+    <section class="projects-games">
+        <h2><span class="fas fa-gamepad"></span> Juegos</h2>
+        {% for p in site.projects %}
+            {% if p.type == "game" %}
+                <div class="project-item">
+                    <div class="project-item-logo">
+                        <img src="{{ p.image_path }}" />
+                    </div>
+                    <div class="project-item-info">
+                        <h3>{{ p.title }}</h3>
+                        <p>
+                            <strong>Descripción: </strong>
+                            {{ p.description }}
+                        </p>
+                        <p>
+                            <strong>Plataformas: </strong>
+                            {% if p.platforms contains "windows" %}
+                                <span class="fab fa-windows"></span>
+                            {% endif %}
+                            {% if p.platforms contains "osx" %}    
+                                <span class="fab fa-apple"></span>
+                            {% endif %}
+                            {% if p.platforms contains "linux" %}
+                                <span class="fab fa-linux"></span>
+                            {% endif %}
+                            {% if p.platforms contains "android" %}
+                                <span class="fab fa-android"></span>
+                            {% endif %}
+                            {% if p.platforms contains "ios" %}    
+                                <span class="fab fa-app-store-ios"></span>
+                            {% endif %}
+                        </p>
+                        <p>
+                            <strong>Estado: </strong>
+                            {{ p.status }}
+                        </p>
+                        <p>
+                            <strong>Precio: </strong>
+                            {% if p.price == "free" %}
+                                Gratis
+                            {% else %}
+                                $ {{ p.price }}
+                            {% endif %}
+                        </p>
+                        <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
+                            <span class="icon"></span>
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
     
     <br/>
     <hr/>
     <br/>
-    
-    <h2><i class="fas fa-globe"></i> Web</h2>
+
+    <section class="projects-apps">
+        <h2><span class="fas fa-mobile"></span> Aplicaciones móviles</h2>
+        {% for p in site.projects %}
+            {% if p.type == "app" %}
+                <div class="project-item">
+                    <div class="project-item-logo">
+                        <img src="{{ p.image_path }}" />
+                    </div>
+                    <div class="project-item-info">
+                        <h3>{{ p.title }}</h3>
+                        <p>
+                            <strong>Descripción: </strong>
+                            {{ p.description }}
+                        </p>
+                        <p>
+                            <strong>Plataformas: </strong>
+                            {% if p.platforms contains "windows" %}
+                                <span class="fab fa-windows"></span>
+                            {% endif %}
+                            {% if p.platforms contains "osx" %}    
+                                <span class="fab fa-apple"></span>
+                            {% endif %}
+                            {% if p.platforms contains "linux" %}
+                                <span class="fab fa-linux"></span>
+                            {% endif %}
+                            {% if p.platforms contains "android" %}
+                                <span class="fab fa-android"></span>
+                            {% endif %}
+                            {% if p.platforms contains "ios" %}    
+                                <span class="fab fa-app-store-ios"></span>
+                            {% endif %}
+                        </p>
+                        <p>
+                            <strong>Estado: </strong>
+                            {{ p.status }}
+                        </p>
+                        <p>
+                            <strong>Precio: </strong>
+                            {% if p.price == "free" %}
+                                Gratis
+                            {% else %}
+                                $ {{ p.price }}
+                            {% endif %}
+                        </p>
+                        <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
+                            <span class="icon"></span>
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
 </div>
