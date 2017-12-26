@@ -2,10 +2,10 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta"><span class="fas fa-calendar-alt"></span> {{ page.date | date_to_string }}</p>
 
 <div class="post">
   {{ content }}
 </div>
 
-<a class="back" href="/blog"> <- Volver al blog </a>
+<a class="btn" href="/blog"> <span class="fas fa-arrow-left"></span> Volver al blog </a>

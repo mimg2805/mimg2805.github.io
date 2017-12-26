@@ -2,7 +2,7 @@
 title: Señas Nicas
 name: SeniasNicas
 type: app
-description: Una aplicación para ayudar con la enseñanza y aprendizaje del lenguaje de señas nicaraguense (ISN).
+description: Una aplicación para ayudar con la enseñanza y aprendizaje del lenguaje de señas nicaragüense (ISN).
 platforms: android
 price: free
 status: En desarrollo
