@@ -22,13 +22,14 @@ title: Proyectos
     <hr/>
     <br/>
 
+    <!--
     <section class="projects-games">
         <h2><span class="fas fa-gamepad"></span> Juegos</h2>
         {% for p in site.projects %}
             {% if p.type == "game" %}
                 <div class="project-item">
                     <div class="project-item-logo">
-                        <img src="{{ p.image_path }}" />
+                        <img src="/assets/images/projects/{{ p.image }}" />
                     </div>
                     <div class="project-item-info">
                         <h3>{{ p.title }}</h3>
@@ -55,8 +56,13 @@ title: Proyectos
                             {% endif %}
                         </p>
                         <p>
-                            <strong>Estado: </strong>
-                            {{ p.status }}
+                            {% if (p.status) %}
+                                <strong>Estado: </strong>
+                                {{ p.status }}
+                            {% else if (p.version) %}
+                                <strong>Versión: </strong>
+                                {{ p.version }}
+                            {% endif %}
                         </p>
                         <p>
                             <strong>Precio: </strong>
@@ -66,6 +72,10 @@ title: Proyectos
                                 $ {{ p.price }}
                             {% endif %}
                         </p>
+                        <a class="btn btn-github" href="{{ site.playstore_url }}" target="_blank">
+                            <span class="fab fa-google-play"></span>
+                            Ver en Google Play Store
+                        </a>
                         <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
                             <span class="icon"></span>
                             Ver en GitHub
@@ -78,6 +88,7 @@ title: Proyectos
     
     <hr/>
     <br/>
+-->
 
     <section class="projects-apps">
         <h2><span class="fas fa-mobile"></span> Aplicaciones móviles</h2>
@@ -85,7 +96,7 @@ title: Proyectos
             {% if p.type == "app" %}
                 <div class="project-item">
                     <div class="project-item-logo">
-                        <img src="{{ p.image_path }}" />
+                        <img src="/assets/images/projects/{{ p.image }}" />
                     </div>
                     <div class="project-item-info">
                         <h3>{{ p.title }}</h3>
@@ -112,8 +123,13 @@ title: Proyectos
                             {% endif %}
                         </p>
                         <p>
-                            <strong>Estado: </strong>
-                            {{ p.status }}
+                            {% if (p.status) %}
+                                <strong>Estado: </strong>
+                                {{ p.status }}
+                            {% else if (p.version) %}
+                                <strong>Versión: </strong>
+                                {{ p.version }}
+                            {% endif %}
                         </p>
                         <p>
                             <strong>Precio: </strong>
@@ -123,6 +139,10 @@ title: Proyectos
                                 $ {{ p.price }}
                             {% endif %}
                         </p>
+                        <a class="btn btn-github" href="{{ site.playstore_url }}" target="_blank">
+                            <span class="fab fa-google-play"></span>
+                            Ver en Google Play Store
+                        </a>
                         <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
                             <span class="icon"></span>
                             Ver en GitHub
