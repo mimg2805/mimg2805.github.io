@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "es" }}">
+<html lang="{{ site.lang | default: 'es' }}">
   <head>
     {% include header.html %}
     {% seo %}
@@ -12,26 +12,45 @@
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
+        <ul id="lang-select">
+          {% assign pages = site.pages | where: "ref", page.ref | sort: 'lang' %}     
+          {% for page in pages %}
+            <li>
+              {% case page.lang %}
+                {% when "es" %}
+                  {% assign flag = "es" %}
+                {% when "en" %}
+                  {% assign flag = "gb" %}
+                {% when "ja" %}
+                  {% assign flag = "jp" %}
+              {% endcase %}
+              <img src="/assets/flags/blank.gif" class="flag flag-{{ flag }}"/>
+              <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        {% assign navLang = site.data.translations.t[page.lang] %}
         <nav>
             <div>
-              <span class="fas fa-home"></span> 
-              <a href="/">Inicio</a>
+              <span class="fas fa-home"></span>
+              <a href="{{ navLang.home.url }}">{{ navLang.home.title }}</a>
             </div>
             <div>
               <span class="fas fa-child"></span> 
-              <a href="/about">Sobre mí</a>
+              <a href="{{ navLang.about.url }}">{{ navLang.about.title }}</a>
             </div>
             <div>
               <span class="fas fa-code"></span> 
-              <a href="/projects">Proyectos</a>
+              <a href="{{ navLang.projects.url }}">{{ navLang.projects.title }}</a>
             </div>
             <div>
               <span class="fas fa-briefcase"></span> 
-              <a href="/cv">CV</a>
+              <a href="{{ navLang.cv.url }}">{{ navLang.cv.title }}</a>
             </div>
             <div>
               <span class="fas fa-phone"></span> 
-              <a href="/contact">Contacto</a>
+              <a href="{{ navLang.contact.url }}">{{ navLang.contact.title }}</a>
             </div>
         </nav>
 

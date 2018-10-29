@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Proyectos
-lang: es
+title: Projects
+lang: en
 ref: projects
 ---
 <div class="blurb">
     <h1>{{ page.title }}</h1>
-    <p>Ésta es la lista de mis proyectos personales.</p>
+    <p>This is the list of my personal projects.</p>
     
     <p>
         <span class="fab fa-github"></span> 
-        También pueden ver mi página de 
-        <a href="https://github.com/mimg2805" target="_blank">GitHub</a>.
+        You can also see my 
+        <a href="https://github.com/mimg2805" target="_blank">GitHub</a> page.
     </p>
 
     <p>
         <span class="fab fa-paypal"></span>
-        Si les gusta lo que hago, consideren ayudarme a crear más aplicaciones y juegos: 
+        If you like what I do, please consider helping me to create more apps and games: 
         <a id="donate" href="https://paypal.me/mimg2805" target="_blank"></a>
     </p>
     
@@ -26,7 +26,7 @@ ref: projects
 
     <!--
     <section class="projects-games">
-        <h2><span class="fas fa-gamepad"></span> Juegos</h2>
+        <h2><span class="fas fa-gamepad"></span> Games</h2>
         {% for p in site.projects %}
             {% if p.type == "game" %}
                 <div class="project-item">
@@ -36,11 +36,11 @@ ref: projects
                     <div class="project-item-info">
                         <h3>{{ p.title }}</h3>
                         <p>
-                            <strong>Descripción: </strong>
-                            {{ p.description[page.lang] }}
+                            <strong>Description: </strong>
+                            {{ p.description }}
                         </p>
                         <p>
-                            <strong>Plataformas: </strong>
+                            <strong>Platforms: </strong>
                             {% if p.platforms contains "windows" %}
                                 <span class="fab fa-windows"></span>
                             {% endif %}
@@ -59,28 +59,28 @@ ref: projects
                         </p>
                         <p>
                             {% if p.status %}
-                                <strong>Estado: </strong>
-                                {{ p.status[page.lang] }}
+                                <strong>Status: </strong>
+                                {{ p.status }}
                             {% else if p.version %}
-                                <strong>Versión: </strong>
+                                <strong>Version: </strong>
                                 {{ p.version }}
                             {% endif %}
                         </p>
                         <p>
-                            <strong>Precio: </strong>
+                            <strong>Price: </strong>
                             {% if p.price == "free" %}
-                                Gratis
+                                Free
                             {% else %}
                                 $ {{ p.price }}
                             {% endif %}
                         </p>
                         <a class="btn btn-github" href="{{ site.playstore_url }}" target="_blank">
                             <span class="fab fa-google-play"></span>
-                            Ver en Google Play Store
+                            Google Play Store page
                         </a>
                         <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
                             <span class="icon"></span>
-                            Ver en GitHub
+                            GitHub page
                         </a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ ref: projects
 -->
 
     <section class="projects-apps">
-        <h2><span class="fas fa-mobile"></span> Aplicaciones móviles</h2>
+        <h2><span class="fas fa-mobile"></span> Mobile apps</h2>
         {% for p in site.projects %}
             {% if p.type == "app" %}
                 <div class="project-item">
@@ -103,11 +103,11 @@ ref: projects
                     <div class="project-item-info">
                         <h3>{{ p.title }}</h3>
                         <p>
-                            <strong>Descripción: </strong>
+                            <strong>Description: </strong>
                             {{ p.description[page.lang] }}
                         </p>
                         <p>
-                            <strong>Plataformas: </strong>
+                            <strong>Platforms: </strong>
                             {% if p.platforms contains "windows" %}
                                 <span class="fab fa-windows"></span>
                             {% endif %}
@@ -126,28 +126,28 @@ ref: projects
                         </p>
                         <p>
                             {% if p.status %}
-                                <strong>Estado: </strong>
-                                {{ p.status }}
+                                <strong>Status: </strong>
+                                {{ p.status[page.lang] }}
                             {% else if p.version %}
-                                <strong>Versión: </strong>
+                                <strong>Version: </strong>
                                 {{ p.version }}
                             {% endif %}
                         </p>
                         <p>
-                            <strong>Precio: </strong>
+                            <strong>Price: </strong>
                             {% if p.price == "free" %}
-                                Gratis
+                                Free
                             {% else %}
                                 $ {{ p.price }}
                             {% endif %}
                         </p>
                         <a class="btn btn-github" href="{{ p.playstore_url }}" target="_blank">
                             <span class="fab fa-google-play"></span>
-                            Ver en Google Play Store
+                            Google Play Store page
                         </a>
                         <a class="btn btn-github" href="{{ site.github_url }}{{ p.name }}" target="_blank">
                             <span class="icon"></span>
-                            Ver en GitHub
+                            GitHub page
                         </a>
                     </div>
                 </div>

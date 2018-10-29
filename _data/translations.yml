@@ -1,0 +1,49 @@
+t:
+  es:
+    home:
+      title: "Inicio"
+      url: "/"
+    about:
+      title: "Sobre mí"
+      url: "/about"
+    projects:
+      title: "Proyectos"
+      url: "/projects"
+    cv:
+      title: "CV"
+      url: "/cv"
+    contact:
+      title: "Contacto"
+      url: "/contact"
+  en:
+    home:
+      title: "Home"
+      url: "/index-en.html"
+    about:
+      title: "About"
+      url: "/about/en.html"
+    projects:
+      title: "Projects"
+      url: "/projects/en.html"
+    cv:
+      title: "Resumé"
+      url: "/cv/en.html"
+    contact:
+      title: "Contact"
+      url: "/contact/en.html"
+  ja:
+    home:
+      title: "ホームページ"
+      url: "/index-ja.html"
+    about:
+      title: "私について (?)"
+      url: "/about/ja.html"
+    projects:
+      title: "プロジェクト"
+      url: "/projects/ja.html"
+    cv:
+      title: "履歴書 (りれきしょ) (?)"
+      url: "/cv/ja.html"
+    contact:
+      title: "コンタクト (?)"
+      url: "/contact/ja.html"
