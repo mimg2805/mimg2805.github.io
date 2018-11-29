@@ -30,8 +30,10 @@ markdown: kramdown
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
-#  - jekyll-paginate
+  - jemoji
 languages: ["es", "en", "ja"]
 
 # Exclude from processing.

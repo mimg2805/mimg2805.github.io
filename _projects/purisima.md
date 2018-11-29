@@ -8,7 +8,6 @@ description:
 platforms: android
 price: free
 version: 1.0
-status: En desarrollo
 image: purisima.png
-playstore_url: 
+playstore_url: https://play.google.com/store/apps/details?id=com.marcosmiranda.purisima
 ---

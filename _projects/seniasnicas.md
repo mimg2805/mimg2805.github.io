@@ -7,7 +7,7 @@ description:
     en: An app to help you teach and learn Nicaraguan Sign Language (LSN).
 platforms: android
 price: free
-version: 1.0
+version: 1.0.1
 image: seniasnicas.png
 playstore_url: https://play.google.com/store/apps/details?id=com.marcosmiranda.seniasnicas
 ---
