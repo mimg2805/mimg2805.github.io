@@ -7,7 +7,7 @@ description:
     en: A mobile game based on the Nicaraguan festivities of La Purísima.
 platforms: android
 price: free
-version: 1.0
+version: 1.1
 image: purisima.png
 playstore_url: https://play.google.com/store/apps/details?id=com.marcosmiranda.purisima
 ---
