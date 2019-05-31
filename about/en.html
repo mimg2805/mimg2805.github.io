@@ -6,15 +6,16 @@ ref: about
 ---
 <div class="blurb">
     <h1>{{ page.title }}</h1>
-    <p>My name is Marcos Iván Miranda García, and I'm 24 years old. <br/>I was born, and currently live in,
-        Managua, Nicaragua. <img src="/assets/flags/blank.gif" class="flag flag-ni" /></p>
+    {% assign year = 'now' | date: "%Y" %}
+    {% assign age = year | minus:1994 %}
+    <p>My name is Marcos Iván Miranda García, and I'm 24 years old. <br/>I was born in Managua, Nicaragua <img src="/assets/flags/blank.gif" class="flag flag-ni" />, and I currently live in Zaragoza, Spain <img src="/assets/flags/blank.gif" class="flag flag-es" />.</p>
     <p>I studied Computer Engineering at the National University of Engineering 
         (Universidad Nacional de Ingeniería - UNI), and I specialize in the development 
         of games, mobile apps and websites (like this one!).</p>
     <p>My greatest interest (and passion) are videogames, 
         be it playing them, or making them.
-        Sadly, there isn't an established videogame industry in my country.
-        So, I make my own games. 
+        Sadly, there isn't an established videogame industry in my home country, Nicaragua.
+        So, I make my own games independently. 
         <!--Also, since I don't like starving, I work as.-->
         I also make websites when I have the chance, which rarely happens.</p>
     <p>Among my favorite things is learning new things.<br/>

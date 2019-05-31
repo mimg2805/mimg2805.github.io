@@ -6,14 +6,15 @@ ref: about
 ---
 <div class="blurb">
     <h1>{{ page.title }}</h1>
-    <p>Mi nombre es Marcos Iván Miranda García, y tengo 24 años. <br/>Nací, y actualmente vivo en,
-        Managua, Nicaragua. <img src="/assets/flags/blank.gif" class="flag flag-ni" /></p>
+    {% assign year = 'now' | date: "%Y" %}
+    {% assign age = year | minus:1994 %}
+    <p>Mi nombre es Marcos Iván Miranda García, y tengo {{ age }} años. <br/>Nací en Managua, Nicaragua <img src="/assets/flags/blank.gif" class="flag flag-ni" />, y actualmente vivo en Zaragoza, España <img src="/assets/flags/blank.gif" class="flag flag-es" />.</p>
     <p>Estudié Ingeniería en Computación en la Universidad Nacional de Ingeniería (UNI), 
         y me especializo en el desarrollo de juegos, aplicaciones móviles 
         y sitios web (¡como éste!).</p>
     <p>Mi mayor interés (y pasión) son los videojuegos, ya sea jugarlos, o hacerlos.
-        Tristemente, en mi país no existe una industria establecida de videojuegos.
-        Así que hago mis propios juegos.
+        Tristemente, en mi país natal, Nicaragua, no existe una industria establecida de videojuegos.
+        Así que programo mis propios juegos de manera independiente.
         <!--Y como no me gusta morir de hambre, 
         trabajo como .-->
         También desarrollo sitios web cuando se me da la oportunidad, lo cual no es muy a menudo.</p>
