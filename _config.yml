@@ -17,13 +17,14 @@ title: Marcos Miranda
 email: mimg2805@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Gamer. Developer. Know-It-All.
-#baseurl: "" # the subpath of your site, e.g. /blog
-url: "mimg2805.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: '' # the subpath of your site, e.g. /blog
+url: 'mimg2805.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 lang: es
 
 twitter_username: 
 github_username: mimg2805
 github_url: https://github.com/mimg2805/
+birthday: '1994-05-28'
 
 # Build settings
 markdown: kramdown
@@ -34,7 +35,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
-languages: ["es", "en", "ja"]
+languages: ['es', 'en', 'ja']
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

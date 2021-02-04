@@ -6,8 +6,9 @@ ref: about
 ---
 <div class="blurb">
     <h1>{{ page.title }}</h1>
-    {% assign year = 'now' | date: "%Y" %}
-    {% assign age = year | minus:1994 %}
+    {% assign now = 'now' | date: '%s' %}
+    {% assign birthday = site.birthday | date: '%s' %}
+    {% assign age = now | minus: birthday | divided_by: 3600 | divided_by: 24 | divided_by: 365 | ceil %}
     <p>Mi nombre es Marcos Iván Miranda García, y tengo {{ age }} años. <br/>Nací en Managua, Nicaragua <img src="/assets/flags/blank.gif" class="flag flag-ni" />, y actualmente vivo en Zaragoza, España <img src="/assets/flags/blank.gif" class="flag flag-es" />.</p>
     <p>Estudié Ingeniería en Computación en la Universidad Nacional de Ingeniería (UNI), 
         y me especializo en el desarrollo de juegos, aplicaciones móviles 
