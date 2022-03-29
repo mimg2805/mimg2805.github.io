@@ -15,15 +15,16 @@
 # in the templates via {{ site.myvariable }}.
 title: Marcos Miranda
 email: mimg2805@gmail.com
+dev-email: mimg2805dev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Gamer. Developer. Know-It-All.
 #baseurl: '' # the subpath of your site, e.g. /blog
 url: 'mimg2805.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 lang: es
 
-twitter_username: 
-github_username: mimg2805
-github_url: https://github.com/mimg2805/
+twitter-username: 
+github-username: mimg2805
+github-url: https://github.com/mimg2805/
 birthday: '1994-05-28'
 
 # Build settings
